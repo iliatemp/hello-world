@@ -4,6 +4,7 @@
 2. `cd hello-world`
 3. `docker-compose up -d`
 4. `open http://localhost`
+5. `you will see 'hello world' page. page screenshot you can find in screens/first_hello.png`
 
 ## Overview
 

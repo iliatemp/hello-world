@@ -16,9 +16,13 @@ RUN export CP_SHA1=198d96c8d7bfafb1ab6df96653c29701510b833c \
 COPY containerpilot.json /etc/containerpilot.json
 ENV CONTAINERPILOT=file:///etc/containerpilot.json
 
+# install ssh
+#RUN apt-get install openssh-server
 
 # Install our application
 COPY index.js /opt/world/
+CMD echo '***********************************!!!!!!!!!!!!!!!!!!!!!!!!!!!1'
+CMD cat /opt/world/index.js
 
 EXPOSE 3002
 CMD ["/bin/containerpilot", "node", "/opt/world/index.js"]

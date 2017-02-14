@@ -5,14 +5,14 @@ nginx:
     links:
       - consul:consul
     restart: always
-hello:
-    build: hello/
+goobye:
+    build: goodbye/
     links:
       - consul:consul
-world:
-    build: world/
-    links:
-      - consul:consul
+#world:
+#    build: world/
+#    links:
+#      - consul:consul
 consul:
     image: consul:latest
     restart: always
